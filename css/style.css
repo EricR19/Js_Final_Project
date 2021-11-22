@@ -6,7 +6,7 @@
 .info {
   display: flex;
   height: 120px;
-  background-color: rebeccapurple;
+  background-color: rgba(118, 112, 196, 0.616);
   flex-direction: row;
   align-items: center;
   align-content: center;
@@ -14,17 +14,12 @@
 }
 .newGame {
   display: flex;
-  height: 100%;
-  width: 25%;
+  height: 50%;
+  width: 15%;
   background-color: red;
   align-items: center;
   justify-content: center;
-}
-.points {
-  display: flex;
-  height: 100%;
-  width: 25%;
-  background-color: black;
+  border-radius: 30px;
 }
 .button {
   display: flex;
