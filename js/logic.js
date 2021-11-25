@@ -32,5 +32,24 @@ let random = () => {
 
 let newGame = () => {
   let array = arrayStrings();
-  document.getElementById("palabra").innerHTML = array[random()];
+  let word = array[random()];
+  document.getElementById("palabra").innerHTML = word;
+  underline(word);
+};
+
+let underline = (word) => {
+  let words = word.split("");
+  console.log(words);
+  let sizeArray = [];
+  for (let i = 0; i < words.length; i++) {
+    sizeArray[i] = "_";
+  }
+  let normalizes = normalize(sizeArray);
+  document.getElementById("hidden").innerHTML = normalizes;
+};
+
+let normalize = (word) => {
+  let normal = word.toString();
+  normal = normal.replace(/,/g, " ");
+  return normal;
 };
