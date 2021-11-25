@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="main-Container">
-      <div class="info">
-        <div class="newGame">
-          <div class="button" onclick="newGame()">Nuevo Juego</div>
-        </div>
-      </div>
-      <div class="logicGame">
-        <div class="left-container">
-          <div class="game">
-            <div class="hiddenWord">
-              <label for="" id="palabra"></label>
-              <label for="" id="hidden"></label>
+        <div class="info">
+            <div class="newGame">
+                <div class="button" onclick="newGame()">Nuevo Juego</div>
             </div>
-          </div>
-          <div class="points"></div>
         </div>
-        <div class="right-container">
-          <div class="letters">
-            <div class="a letter" id="a">a</div>
-            <div class="b letter" id="b">b</div>
-            <div class="c letter" id="c">c</div>
-            <div class="d letter" id="d">d</div>
-            <div class="e letter" id="e">e</div>
-            <div class="f letter" id="f">f</div>
-            <div class="g letter" id="g">g</div>
-            <div class="h letter" id="h">h</div>
-            <div class="i letter" id="i">i</div>
-            <div class="j letter" id="j">j</div>
-            <div class="k letter" id="k">k</div>
-            <div class="l letter" id="l">l</div>
-            <div class="m letter" id="m">m</div>
-            <div class="n letter" id="n">n</div>
-            <div class="o letter" id="o">o</div>
-            <div class="p letter" id="p">p</div>
-            <div class="q letter" id="q">q</div>
-            <div class="r letter" id="r">r</div>
-            <div class="s letter" id="s">s</div>
-            <div class="t letter" id="t">t</div>
-            <div class="u letter" id="u">u</div>
-            <div class="v letter" id="v">v</div>
-            <div class="w letter" id="w">w</div>
-            <div class="x letter" id="x">x</div>
-            <div class="y letter" id="y">y</div>
-            <div class="z letter" id="z">z</div>
-          </div>
-          <div class="clue"></div>
+        <div class="logicGame">
+            <div class="left-container">
+                <div class="game">
+                    <div class="hiddenWord">
+                        <label for="" id="palabra"></label>
+                        <label for="" id="hidden"></label>
+                    </div>
+                </div>
+                <div class="points"></div>
+            </div>
+            <div class="right-container">
+                <div class="letters">
+                    <div class="letter" id="a" onclick="letters('a')">a</div>
+                    <div class="letter" id="b" onclick="letters('b')">b</div>
+                    <div class="c letter" id="c">c</div>
+                    <div class="d letter" id="d">d</div>
+                    <div class="e letter" id="e">e</div>
+                    <div class="f letter" id="f">f</div>
+                    <div class="g letter" id="g">g</div>
+                    <div class="h letter" id="h">h</div>
+                    <div class="i letter" id="i">i</div>
+                    <div class="j letter" id="j">j</div>
+                    <div class="k letter" id="k">k</div>
+                    <div class="l letter" id="l">l</div>
+                    <div class="m letter" id="m">m</div>
+                    <div class="n letter" id="n">n</div>
+                    <div class="o letter" id="o">o</div>
+                    <div class="p letter" id="p">p</div>
+                    <div class="q letter" id="q">q</div>
+                    <div class="r letter" id="r">r</div>
+                    <div class="s letter" id="s">s</div>
+                    <div class="t letter" id="t">t</div>
+                    <div class="u letter" id="u">u</div>
+                    <div class="v letter" id="v">v</div>
+                    <div class="w letter" id="w">w</div>
+                    <div class="x letter" id="x">x</div>
+                    <div class="y letter" id="y">y</div>
+                    <div class="z letter" id="z">z</div>
+                </div>
+                <div class="clue"></div>
+            </div>
         </div>
-      </div>
     </div>
     <script src="js/logic.js"></script>
-  </body>
+</body>
+
 </html>
