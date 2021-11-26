@@ -76,6 +76,20 @@
   justify-content: center;
   align-items: center;
 }
+.points {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.clue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 label {
   font-size: 40px;
