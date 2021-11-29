@@ -1,5 +1,6 @@
 let global = [];
 let wordFormed = [];
+let notFormer = [];
 
 function arrayStrings() {
   let arrayString = [
@@ -65,11 +66,22 @@ let logicGame = (data) => {
       r.style.backgroundColor = "black";
     }
   }
+  if (!global.toString().includes(data)) {
+    let r = document.getElementById(data);
+    r.style.cursor = "not-allowed";
+    r.style.backgroundColor = "red";
+    notFormer.push(data);
+  }
 };
 let refresh = () => {
   for (let i = 0; i < wordFormed.length; i++) {
     let z = document.getElementById(wordFormed[i]);
     z.style.cursor = "pointer";
-    z.style.background = "aquamarine";
+    z.style.background = "hsl(168, 36%, 52%)";
+  }
+  for (let z = 0; z < notFormer.length; z++) {
+    let a = document.getElementById(notFormer[z]);
+    a.style.cursor = "pointer";
+    a.style.background = "hsl(168, 36%, 52%)";
   }
 };
