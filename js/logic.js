@@ -39,7 +39,6 @@ let random = () => {
 };
 
 let newGame = () => {
-  shift = 0;
   refresh();
   let array = arrayStrings();
   let word = array[random()];
@@ -69,35 +68,39 @@ let logicGame = (data) => {
       r.style.cursor = "not-allowed";
       r.style.backgroundColor = "black";
       r.style.pointerEvents = "none";
+      document.getElementById(
+        "Elegida"
+      ).innerHTML = `La letra elegida es: ${data}`;
     }
   }
   if (!global.toString().includes(data)) {
-    let r = document.getElementById(data);
-    r.style.backgroundColor = "red";
     notFormer.push(data);
     var sh = shifts();
+    document.getElementById(
+      "Elegida"
+    ).innerHTML = `La letra elegida es: ${data}`;
   }
   if (sh == 10) {
     pointsCpu++;
-    alert("Perdio");
+    alert(
+      `Uuuh! Perdio, la palabra era: ${global.toString().replace(/,/g, "")}`
+    );
     newGame();
     document.getElementById("puntosCpu").innerHTML = pointsCpu;
   }
   points();
 };
 let refresh = () => {
+  document.getElementById("Elegida").innerHTML = ``;
+  shift = 0;
   for (let i = 0; i < wordFormed.length; i++) {
+    document.getElementById("shifts").innerHTML = "";
     let z = document.getElementById(wordFormed[i]);
     if (wordFormed[i] != "_") {
       z.style.cursor = "pointer";
       z.style.background = "hsl(168, 36%, 52%)";
       z.style.pointerEvents = "auto";
     }
-  }
-  for (let z = 0; z < notFormer.length; z++) {
-    let a = document.getElementById(notFormer[z]);
-    a.style.cursor = "pointer";
-    a.style.background = "hsl(168, 36%, 52%)";
   }
 };
 let points = () => {
@@ -107,11 +110,13 @@ let points = () => {
     );
     pointsPlayer++;
     document.getElementById("puntosJugador").innerHTML = pointsPlayer;
+    shift = 0;
     newGame();
   }
 };
 
 let shifts = () => {
   shift++;
+  document.getElementById("shifts").innerHTML = `Intentos: ${shift}`;
   return shift;
 };
