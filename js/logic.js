@@ -1,6 +1,5 @@
 let global = [];
 let wordFormed = [];
-let notFormer = [];
 let pointsPlayer = 0;
 let pointsCpu = 0;
 let shift = 0;
@@ -74,7 +73,6 @@ let logicGame = (data) => {
     }
   }
   if (!global.toString().includes(data)) {
-    notFormer.push(data);
     var sh = shifts();
     document.getElementById(
       "Elegida"
