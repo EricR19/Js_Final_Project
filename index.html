@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="main-Container">
-      <div class="info">
-        <div class="jugador">
-          <div class="puntosJugador">
-            <label class="lbl-puntos" for="">Los puntos del jugador: <label id="puntosJugador" for=""></label> </label>
-          </div>
-        </div>
-        <div class="newGame">
-          <div class="button" onclick="newGame()">Nuevo Juego</div>
-        </div>
-        <div class="jugador">
-          <div class="puntosJugador">
-            <label class="lbl-puntos" for="">Los puntos de la Computadora: <label id="puntosCpu" for=""></label> </label>
-          </div>
-        </div>
-      </div>
-      <div class="logicGame">
-        <div class="left-container">
-          <div class="game">
-            <div class="hiddenWord" id="hiddenWord">
-              <label for="" id="hidden"></label>
+        <div class="info">
+            <div class="jugador">
+                <div class="puntosJugador">
+                    <label class="lbl-puntos" for="">Los puntos del jugador: <label id="puntosJugador" for=""></label> </label>
+                </div>
             </div>
-          </div>
-          <div class="points">
-            <label for="" id="shifts"></label>
-          </div>
-        </div>
-        <div class="right-container">
-          <div class="letters">
-            <div class="letter" id="a" onclick="letters('a')">a</div>
-            <div class="letter" id="b" onclick="letters('b')">b</div>
-            <div class="letter" id="c" onclick="letters('c')">c</div>
-            <div class="letter" id="d" onclick="letters('d')">d</div>
-            <div class="letter" id="e" onclick="letters('e')">e</div>
-            <div class="letter" id="f" onclick="letters('f')">f</div>
-            <div class="letter" id="g" onclick="letters('g')">g</div>
-            <div class="letter" id="h" onclick="letters('h')">h</div>
-            <div class="letter" id="i" onclick="letters('i')">i</div>
-            <div class="letter" id="j" onclick="letters('j')">j</div>
-            <div class="letter" id="k" onclick="letters('k')">k</div>
-            <div class="letter" id="l" onclick="letters('l')">l</div>
-            <div class="letter" id="m" onclick="letters('m')">m</div>
-            <div class="letter" id="n" onclick="letters('n')">n</div>
-            <div class="letter" id="o" onclick="letters('o')">o</div>
-            <div class="letter" id="p" onclick="letters('p')">p</div>
-            <div class="letter" id="q" onclick="letters('q')">q</div>
-            <div class="letter" id="r" onclick="letters('r')">r</div>
-            <div class="letter" id="s" onclick="letters('s')">s</div>
-            <div class="letter" id="t" onclick="letters('t')">t</div>
-            <div class="letter" id="u" onclick="letters('u')">u</div>
-            <div class="letter" id="v" onclick="letters('v')">v</div>
-            <div class="letter" id="w" onclick="letters('w')">w</div>
-            <div class="letter" id="x" onclick="letters('x')">x</div>
-            <div class="letter" id="y" onclick="letters('y')">y</div>
-            <div class="letter" id="z" onclick="letters('z')">z</div>
-          </div>
-          <div class="info-game">
-            <div>
-              <label class="lbl-info" for=""></label>
-              Las letras encontradas estarán de color <span style="color:rgb(0, 0, 0);font-weight:bold">NEGRO</span></label>
+            <div class="newGame">
+                <div class="button" onclick="newGame()">Nuevo Juego</div>
             </div>
-            <div>
-              <label class="lbl-info" for="" id="Elegida"></label>
-             </div>
-          </div>
-          <div class="clue">
-            <label for="">Pistas</label>
-          </div>
+            <div class="jugador">
+                <div class="puntosJugador">
+                    <label class="lbl-puntos" for="">Los puntos de la Computadora: <label id="puntosCpu" for=""></label> </label>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="logicGame">
+            <div class="left-container">
+                <div class="game">
+                    <div class="hiddenWord" id="hiddenWord">
+                        <label for="" id="hidden"></label>
+                    </div>
+                </div>
+                <div class="points">
+                    <label for="" id="shifts"></label>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="letters">
+                    <div class="letter" id="a" onclick="letters('a')">a</div>
+                    <div class="letter" id="b" onclick="letters('b')">b</div>
+                    <div class="letter" id="c" onclick="letters('c')">c</div>
+                    <div class="letter" id="d" onclick="letters('d')">d</div>
+                    <div class="letter" id="e" onclick="letters('e')">e</div>
+                    <div class="letter" id="f" onclick="letters('f')">f</div>
+                    <div class="letter" id="g" onclick="letters('g')">g</div>
+                    <div class="letter" id="h" onclick="letters('h')">h</div>
+                    <div class="letter" id="i" onclick="letters('i')">i</div>
+                    <div class="letter" id="j" onclick="letters('j')">j</div>
+                    <div class="letter" id="k" onclick="letters('k')">k</div>
+                    <div class="letter" id="l" onclick="letters('l')">l</div>
+                    <div class="letter" id="m" onclick="letters('m')">m</div>
+                    <div class="letter" id="n" onclick="letters('n')">n</div>
+                    <div class="letter" id="o" onclick="letters('o')">o</div>
+                    <div class="letter" id="p" onclick="letters('p')">p</div>
+                    <div class="letter" id="q" onclick="letters('q')">q</div>
+                    <div class="letter" id="r" onclick="letters('r')">r</div>
+                    <div class="letter" id="s" onclick="letters('s')">s</div>
+                    <div class="letter" id="t" onclick="letters('t')">t</div>
+                    <div class="letter" id="u" onclick="letters('u')">u</div>
+                    <div class="letter" id="v" onclick="letters('v')">v</div>
+                    <div class="letter" id="w" onclick="letters('w')">w</div>
+                    <div class="letter" id="x" onclick="letters('x')">x</div>
+                    <div class="letter" id="y" onclick="letters('y')">y</div>
+                    <div class="letter" id="z" onclick="letters('z')">z</div>
+                </div>
+                <div class="info-game">
+                    <div>
+                        <label class="lbl-info" for=""></label> Las letras encontradas estarán de color <span style="color:rgb(0, 0, 0);font-weight:bold">NEGRO</span></label>
+                    </div>
+                    <div>
+                        <label class="lbl-info" for="" id="Elegida"></label>
+                    </div>
+                </div>
+                <div class="clue">
+                    <label for="" id="pista"></label>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/logic.js"></script>
-  </body>
+</body>
+
 </html>
